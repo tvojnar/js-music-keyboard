@@ -1,9 +1,9 @@
 // TODO: get this method to work so I can DRY my code
-// QUESTION: how can I do string interpolation in a jQuery object to be able to select the right element by id? 
+// QUESTION: how can I do string interpolation in a jQuery object to be able to select the right element by id?
 const playNote = (note) => {
   let toPlay = note + 'Audio'
-  let play = $(`##{toPlay}`)[0];
-  console.log(play);
+  // let play = $(`#${toPlay}`)[0];
+  // console.log(play);
   // play the note
   $(`#${toPlay}`)[0].play();
   // reset to the start so it can play again without refreshing the page
@@ -12,59 +12,31 @@ const playNote = (note) => {
 
 $(document).ready( function() {
   $('.c').on('click', function() {
-    // play the note
-    $('#cAudio')[0].play();
-    // reset to the start so
-    $('#cAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('c');
   }); // .on
 
   $('.d').on('click', function() {
-    // play the note
-    $('#dAudio')[0].play();
-    // reset to the start so
-    $('#dAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('d');
   }); // .on
 
   $('.e').on('click', function() {
-    // play the note
-    $('#eAudio')[0].play();
-    // reset to the start so
-    $('#eAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('e');
   }); // .on
 
   $('.f').on('click', function() {
-    // play the note
-    $('#fAudio')[0].play();
-    // reset to the start so
-    $('#fAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('f');
   }); // .on
 
   $('.g').on('click', function() {
-    // play the note
-    $('#gAudio')[0].play();
-    // reset to the start so
-    $('#gAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('g');
   }); // .on
 
   $('.a').on('click', function() {
-    // play the note
-    $('#aAudio')[0].play();
-    // reset to the start so
-    $('#aAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('a');
   }); // .on
 
   $('.b').on('click', function() {
-    // play the note
-    $('#bAudio')[0].play();
-    // reset to the start so
-    $('#bAudio')[0].currentTime = 0;
-    // playNote('c');
+    playNote('b');
   }); // .on
 
 

@@ -1,3 +1,5 @@
+// TODO: get this method to work so I can DRY my code
+// QUESTION: how can I do string interpolation in a jQuery object to be able to select the right element by id? 
 const playNote = (note) => {
   let toPlay = note + 'Audio'
   let play = $(`##{toPlay}`)[0];
